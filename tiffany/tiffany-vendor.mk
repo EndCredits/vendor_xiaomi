@@ -18,27 +18,23 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/xiaomi/tiffany
 
 PRODUCT_COPY_FILES += \
-    vendor/xiaomi/tiffany/proprietary/etc/camera/camera_config.xml:system/etc/camera/camera_config.xml \
-    vendor/xiaomi/tiffany/proprietary/etc/camera/csidtg_camera.xml:system/etc/camera/csidtg_camera.xml \
-    vendor/xiaomi/tiffany/proprietary/etc/camera/csidtg_chromatix.xml:system/etc/camera/csidtg_chromatix.xml \
-    vendor/xiaomi/tiffany/proprietary/etc/camera/ov12a10_arc_chromatix.xml:system/etc/camera/ov12a10_arc_chromatix.xml \
-    vendor/xiaomi/tiffany/proprietary/etc/camera/ov12a10_arc_ofilm_chromatix.xml:system/etc/camera/ov12a10_arc_ofilm_chromatix.xml \
-    vendor/xiaomi/tiffany/proprietary/etc/camera/ov12a10_chromatix.xml:system/etc/camera/ov12a10_chromatix.xml \
-    vendor/xiaomi/tiffany/proprietary/etc/camera/ov13880_arc_chromatix.xml:system/etc/camera/ov13880_arc_chromatix.xml \
-    vendor/xiaomi/tiffany/proprietary/etc/camera/ov13880_arc_ofilm_chromatix.xml:system/etc/camera/ov13880_arc_ofilm_chromatix.xml \
-    vendor/xiaomi/tiffany/proprietary/etc/camera/ov13880_chromatix.xml:system/etc/camera/ov13880_chromatix.xml \
-    vendor/xiaomi/tiffany/proprietary/etc/camera/ov5675_qtech_chromatix.xml:system/etc/camera/ov5675_qtech_chromatix.xml \
-    vendor/xiaomi/tiffany/proprietary/etc/camera/s5k5e8_ofilm_chromatix.xml:system/etc/camera/s5k5e8_ofilm_chromatix.xml \
-    vendor/xiaomi/tiffany/proprietary/lib/libDiracAPI_SHARED.so:system/lib/libDiracAPI_SHARED.so \
-    vendor/xiaomi/tiffany/proprietary/lib/soundfx/libasphere.so:system/lib/soundfx/libasphere.so \
-    vendor/xiaomi/tiffany/proprietary/lib/soundfx/libdirac.so:system/lib/soundfx/libdirac.so \
-    vendor/xiaomi/tiffany/proprietary/lib64/hw/gf_fingerprint.default.so:system/lib64/hw/gf_fingerprint.default.so \
-    vendor/xiaomi/tiffany/proprietary/lib64/libgf_algo.so:system/lib64/libgf_algo.so \
-    vendor/xiaomi/tiffany/proprietary/lib64/libgf_ca.so:system/lib64/libgf_ca.so \
-    vendor/xiaomi/tiffany/proprietary/lib64/libgf_hal.so:system/lib64/libgf_hal.so \
-    vendor/xiaomi/tiffany/proprietary/lib64/libgoodixfingerprintd_binder.so:system/lib64/libgoodixfingerprintd_binder.so \
-    vendor/xiaomi/tiffany/proprietary/lib64/libsoftkeymaster.so:system/lib64/libsoftkeymaster.so \
-    vendor/xiaomi/tiffany/proprietary/lib64/soundfx/libasphere.so:system/lib64/soundfx/libasphere.so \
+    vendor/xiaomi/tiffany/proprietary/etc/camera/camera_config.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/camera/camera_config.xml \
+    vendor/xiaomi/tiffany/proprietary/etc/camera/csidtg_camera.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/camera/csidtg_camera.xml \
+    vendor/xiaomi/tiffany/proprietary/etc/camera/csidtg_chromatix.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/camera/csidtg_chromatix.xml \
+    vendor/xiaomi/tiffany/proprietary/etc/camera/ov12a10_arc_chromatix.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/camera/ov12a10_arc_chromatix.xml \
+    vendor/xiaomi/tiffany/proprietary/etc/camera/ov12a10_arc_ofilm_chromatix.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/camera/ov12a10_arc_ofilm_chromatix.xml \
+    vendor/xiaomi/tiffany/proprietary/etc/camera/ov12a10_chromatix.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/camera/ov12a10_chromatix.xml \
+    vendor/xiaomi/tiffany/proprietary/etc/camera/ov13880_arc_chromatix.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/camera/ov13880_arc_chromatix.xml \
+    vendor/xiaomi/tiffany/proprietary/etc/camera/ov13880_arc_ofilm_chromatix.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/camera/ov13880_arc_ofilm_chromatix.xml \
+    vendor/xiaomi/tiffany/proprietary/etc/camera/ov13880_chromatix.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/camera/ov13880_chromatix.xml \
+    vendor/xiaomi/tiffany/proprietary/etc/camera/ov5675_qtech_chromatix.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/camera/ov5675_qtech_chromatix.xml \
+    vendor/xiaomi/tiffany/proprietary/etc/camera/s5k5e8_ofilm_chromatix.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/camera/s5k5e8_ofilm_chromatix.xml \
+    vendor/xiaomi/tiffany/proprietary/lib64/hw/gf_fingerprint.default.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/hw/gf_fingerprint.default.so \
+    vendor/xiaomi/tiffany/proprietary/lib64/libgf_algo.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libgf_algo.so \
+    vendor/xiaomi/tiffany/proprietary/lib64/libgf_ca.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libgf_ca.so \
+    vendor/xiaomi/tiffany/proprietary/lib64/libgf_hal.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libgf_hal.so \
+    vendor/xiaomi/tiffany/proprietary/lib64/libgoodixfingerprintd_binder.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libgoodixfingerprintd_binder.so \
+    vendor/xiaomi/tiffany/proprietary/lib64/libsoftkeymaster.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libsoftkeymaster.so \
     vendor/xiaomi/tiffany/proprietary/vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.biometrics.fingerprint@2.1-service \
     vendor/xiaomi/tiffany/proprietary/vendor/bin/hw/qcrild:$(TARGET_COPY_OUT_VENDOR)/bin/hw/qcrild \
     vendor/xiaomi/tiffany/proprietary/vendor/bin/mm-qcamera-daemon:$(TARGET_COPY_OUT_VENDOR)/bin/mm-qcamera-daemon \
@@ -51,7 +47,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/tiffany/proprietary/vendor/etc/acdbdata/QRD/QRD_Speaker_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/QRD/QRD_Speaker_cal.acdb \
     vendor/xiaomi/tiffany/proprietary/vendor/etc/acdbdata/QRD/QRD_adsp_avs_config.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/QRD/QRD_adsp_avs_config.acdb \
     vendor/xiaomi/tiffany/proprietary/vendor/etc/acdbdata/QRD/QRD_workspaceFile.qwsp:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/QRD/QRD_workspaceFile.qwsp \
-    vendor/xiaomi/tiffany/proprietary/vendor/etc/diracmobile.config:$(TARGET_COPY_OUT_VENDOR)/etc/diracmobile.config \
     vendor/xiaomi/tiffany/proprietary/vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.biometrics.fingerprint@2.1-service.rc \
     vendor/xiaomi/tiffany/proprietary/vendor/etc/init/qcrild.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qcrild.rc \
     vendor/xiaomi/tiffany/proprietary/vendor/etc/permissions/com.fingerprints.extension.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.fingerprints.extension.xml \
